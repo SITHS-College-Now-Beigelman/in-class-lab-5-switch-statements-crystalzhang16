@@ -23,7 +23,7 @@ int main ()
         direct = rand() % 4 + 1; //random number between 1 and 4 so each is 25% //probable
         //1 means North, 2 means South, 3 means East and 4 means West
 
-        if ((direct == 1) && (north<3)) 
+        if (direct == 1) 
            {
             north = north + 1;
             steps = steps + 1;
@@ -35,13 +35,13 @@ int main ()
             steps = steps + 1;
             }
 
-        else if ((direct == 3) && (east<2)) 
+        else if (direct == 3) 
             {
             east = east + 1;
             steps = steps + 1; 
             }
 
-        else if(direct == 4)
+        else if (direct == 4)
             {
             west = west + 1;
             steps = steps + 1;
