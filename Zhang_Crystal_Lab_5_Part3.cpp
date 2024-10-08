@@ -45,24 +45,26 @@ int main ()
     << " blocks west from the starting point." << endl;
     */
 
-      while (east <= 2 && north <= 3)
+      while ((east <= 2) && (north <= 3))
     {
         direct = rand() % 4 + 1; //random number between 1 and 4 so each is 25% //probable
         //1 means North, 2 means South, 3 means East and 4 means West
 
-        if (direct == 1) 
+        if ((direct == 1) && (north<3)) 
             north = north + 1;
 
         else if (direct == 2) 
             south = south + 1; 
 
-        else if (direct == 3) 
+        else if ((direct == 3) && (east<2)) 
             east = east + 1; 
 
-        else
+        else if (direct == 4)
             west = west + 1;
+ 
+        steps = steps + 1;
     }
    
-    cout << "It took the robot " << steps << " steps to move two blocks east and three blocks north" << endl; 
+    cout << "It took the robot " << steps << " steps to move two blocks east and three blocks north" << north << west << east << south << endl; 
     return 0;
 }
