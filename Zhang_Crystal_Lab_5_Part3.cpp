@@ -11,7 +11,7 @@ using namespace std;
 int main () 
 { 
     int direct;
-    int north  = 0;
+    int north = 0;
     int south = 0; 
     int east = 0; 
     int west = 0;
@@ -20,7 +20,7 @@ int main ()
     srand(time(0));
     
     /*
-     for (int i=1; i<=25; i++)
+    for (int i=1; i<=25; i++)
     {
         direct = rand() % 4 + 1; //random number between 1 and 4 so each is 25% //probable
         //1 means North, 2 means South, 3 means East and 4 means West
@@ -42,8 +42,9 @@ int main ()
     << " blocks north from the starting point and " << south 
     << " blocks south from the starting point " << east 
     << " blocks east for the starting point " << west 
-    << " blocks west from the starting point." << endl;
+    << " blocks west from the starting point." << endl; 
     */
+
 
       while ((east <= 2) && (north <= 3))
     {
@@ -51,18 +52,28 @@ int main ()
         //1 means North, 2 means South, 3 means East and 4 means West
 
         if ((direct == 1) && (north<3)) 
+           {
             north = north + 1;
+            steps = steps + 1;
+           }
 
         else if (direct == 2) 
+            {
             south = south + 1; 
+            steps = steps + 1;
+            }
 
         else if ((direct == 3) && (east<2)) 
-            east = east + 1; 
+            {
+            east = east + 1;
+            steps = steps + 1; 
+            }
 
-        else if (direct == 4)
+        else if(direct == 4)
+            {
             west = west + 1;
- 
-        steps = steps + 1;
+            steps = steps + 1;
+            }
     }
    
     cout << "It took the robot " << steps << " steps to move two blocks east and three blocks north" << north << west << east << south << endl; 
