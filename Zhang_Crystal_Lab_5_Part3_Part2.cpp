@@ -48,6 +48,6 @@ int main ()
             }
     }
    
-    cout << "It took the robot " << steps << " steps to move two blocks east and three blocks north" << endl; 
+    cout << "It took the robot " << steps << " steps to move two blocks east and three blocks north" << north << east << endl; 
     return 0;
 }
