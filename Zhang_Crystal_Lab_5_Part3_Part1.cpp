@@ -10,7 +10,7 @@ using namespace std;
 
 int main () 
 { 
-    int direct; //declaring variables 
+    int direct; //declaring variables for the directions
     int north = 0;
     int south = 0; 
     int east = 0; 
@@ -42,5 +42,9 @@ int main ()
     << " blocks south from the starting point " << east //prints how many steps east the robot went
     << " blocks east for the starting point " << west //prints how many steps west the robot went 
     << " blocks west from the starting point." << endl; 
+        return 0; 
+
+        //Output: The robot is 7 blocks north from the starting point and 5 blocks south from the starting point 7 blocks east for the starting point 6 blocks west from the starting point.
+
 }
 
