@@ -58,32 +58,15 @@ cout << "Invalid exercise" << endl;
 cout << "How many calories do you want to burn?" << endl; //asks user to input data (how many calories they want to burn)
 cin >> calories; //allows user to input data 
 
-//asks user what exercise they want to do 
-cout << "What exercise do you wish to do? If wallking slowly press 1, if walking quickly press 2, if jogging press 3" << endl; 
-cin >> exercise; //allows user to input what exercise they want to do in numerical form 
-
-
 cout << "To lose " << calories << " calories, you will need to: " << endl; //prints a sentence starter for the data that will be displayed
 
-switch (exercise) 
-{
-//calculates how many minutes a user will have to perform an activity for based on their weight and how many calories they want to lose. Uses user inputted data as well as fixed data. Rounds the number to 2 digits. 
-
-case 1:
 cout << "Walk Slowly for " << (200*calories) / (2 * 3.5 * weight)<< " minute(s)"<< endl; 
-break;
 
-case 2:
 cout << "Walk Quickly for " << (200*calories) / (3 * 3.5 * weight)<< " minute(s)" << endl; 
-break;
 
-case 3:
 cout << "Jog for " << (200*calories) / (8.8 * 3.5 * weight)<< " minute(s)"<< endl;
-break; 
 
-default: 
-cout << "That input is invalid, please choose a number from 1-3 next time" << endl;
-}
+
 
 return 0; 
 
