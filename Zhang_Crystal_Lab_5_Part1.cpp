@@ -93,4 +93,4 @@ Walk Slowly for 40 minute(s)
 Walk Quickly for 26.6667 minute(s)
 Jog for 9.09091 minute(s)
 */ 
-}
+
