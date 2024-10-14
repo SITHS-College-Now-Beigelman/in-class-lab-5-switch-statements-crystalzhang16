@@ -69,13 +69,14 @@ cout << "Jog for " << (200*calories) / (8.8 * 3.5 * weight)<< " minute(s)"<< end
 
 
 return 0; 
+}
 
 /*
 Output if:
 exercise duration is 40 minutes 
 weight is 40 kilograms 
 desired calorie burn is 56 calories
-exercise of desire for both is walking slowly
+exercise of desire is walking slowly 
 
 What is your exercise duration in minutes?
 40
@@ -84,12 +85,12 @@ What is your weight in kilograms?
 What exercise do you wish to do? If wallking slowly press 1, if walking quickly press 2, if jogging press 3
 1
 If you exercise by walking slowly for 40 minutes, at 40 kilograms. Then you will lose 56 calories.
-
+ 
 How many calories do you want to burn?
 56
-What exercise do you wish to do? If wallking slowly press 1, if walking quickly press 2, if jogging press 3
-1
 To lose 56 calories, you will need to: 
 Walk Slowly for 40 minute(s)
+Walk Quickly for 26.6667 minute(s)
+Jog for 9.09091 minute(s)
 */ 
 }
