@@ -48,7 +48,7 @@ int main ()
             }
     }
    
-    cout << "It took the robot " << steps << " steps to move two blocks east and three blocks north. " << north << "north " << east << " east" << endl; 
+    cout << "It took the robot " << steps << " steps to move two blocks east and three blocks north. " << north << " north " << east << " east" << endl; 
     //prints how many trials/steps in total it took the the program to end if east was 2 or north was  3 
     
     return 0;
